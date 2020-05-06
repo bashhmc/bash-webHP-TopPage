@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>BASH official website</title>
+      <script src="js/jquery-3.4.1.min.js"></script>
+      <link href="slick/slick-theme.css" rel="stylesheet" type="text/css">
+      <link href="slick/slick.css" rel="stylesheet" type="text/css">
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+      <script type="text/javascript" src="slick/slick.min.js"></script>
+  </head>
+
+  <body>
+<!-- topmenu------------------------------------------------------------------->
+<header>
+      <div class="header-toppage">
+        <div class="header-black">
+        </div>
+       <div class="header-top">
+        <div class="headerleft">
+          <div class="header-logo-top">
+            <img width="117px" height="80px" src="img/bash-logo.PNG" alt="bash-logo">
+          </div>
+        <div class="menu-list-left">
+          <a class="Mlist" href="#Info">- Info -</a>
+          <a class="Mlist clear-left" href="#Movie">- Schedule -</a>
+        </div>
+        <div class="menu-list-right">
+          <a class="Mlist" href="#Goods">- Goods -</a>
+          <a class="Mlist clear-right" href="#Contact">- Contact -</a>
+        </div>
+      </div>
+     </div>
+    </div>
+</header>
+<!---contents ---------------------------------------------------------------->
+<contents-top>
+  <div class="black-back">
+  </div>
+  <div id="player">
+    <script>
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '720px',
+          width: '1519px',
+          videoId: 'dPhWBDzVNEk',
+          playerVars: { 'autoplay': 1, 'controls': 0, 'loop':1, 'modestbranding':1,
+           'rel':0, 'playsunline':1, 'start':13, 'end':99, 'disablekb':1, 'playlist':'dPhWBDzVNEk', },
+          events: {
+            'onReady': onPlayerReady,
+          }
+        });
+      }
+
+      function onPlayerReady(event) {
+        event.target.playVideo();
+        event.target.mute();
+      }
+    </script>
+  </div>
+</contents-top>
+
+<!-- フッター ----------------------------------------------------------------->
+    <footer>
+      <div class="menu footer footer-top">
+        <div class="footer-icons">
+          <div class="icon">
+           <a href="https://www.youtube.com/channel/UCj0r_vSiw2mjor1aUmVdpZQ"><i id="iconyoutube"   class="fab fa-youtube fa-2x"></i></a>
+          </div>
+          <div class="icon">
+           <a href="https://twitter.com/BASH_HMC"        ><i id="icontwitter"   class="fab fa-twitter fa-2x"></i></a>
+          </div>
+          <div class="icon">
+           <a href="https://www.instagram.com/bash__hmc/"><i id="iconinstagram" class="fab fa-instagram fa-2x"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-reserved">
+        <p><small>-  2020 BASH ALL RIGHTS RESERVED  -</small></p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
