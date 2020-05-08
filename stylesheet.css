@@ -311,11 +311,16 @@ a:hover{
   background-color: rgba(0, 0, 0, 0.1);
   z-index: 7;
 }
-
+/*
 .player{
   z-index: 3;
-  }
+  }*/
 
+.youtube-smapho{
+  width:100%;
+  height:100%;
+}
+  
 contents-top{
   height: 1920px;
   weight: 1080px;
