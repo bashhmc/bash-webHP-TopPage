@@ -80,18 +80,6 @@
   height: 290px;
 }
 
-.smapho-picture{
-  display: inline-block;
-}
-
-.smapho-picture img{
-  width: 100%;
-}
-
-#player{
-  display: none;
-}
-
 }
 
 @media (max-width:380px) {
@@ -144,18 +132,6 @@
 
 .black-back{
   height: 290px;
-}
-
-.smapho-picture{
-  display: inline-block;
-}
-
-.smapho-picture img{
-  width: 100%;
-}
-
-#player{
-  display: none;
 }
 
 /* 共通footer ---------------------------------------------------------------*/
